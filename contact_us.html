@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/serviclean.js"></script>
+    <link rel="stylesheet" href="css/rangeSlider.css">
+	<link href = "css/seviclean_stylesheet.css" type = "text/css" rel = "stylesheet" />
+</head>
+
+<body>
+
+    <!--Mobile menu-->
+ <nav id="affix-nav" class="navbar navbar-inverse navbar-fixed-top visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">
+      	<img src='images/logo_nav_mobile.png' alt="Logo" width="50" height="50" />
+      </a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="active"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+    
+    <!--End mobile menu-->
+    <div class = "container-fluid">
+    	<div class = "visible-xs padding_top"></div>
+        <div class="row visible-xs">
+        	<div class = "col-xs-12" align="center">
+        		<h1>Contact Us</h1>
+            </div>
+        </div>
+        <div class="row visible-xs">
+        	<div class = "col-xs-1"></div>
+            <div class = "col-xs-10">
+            	<p>Feel free to fill out the form below to contact us with any question or concern. Or email us directly at <strong style="color:#01bbd4">contact<span style="color:#ffca3c">@</span>hcserviclean.com</strong>, we will be sure to answer it as soon as we can. 
+                </p>
+            </div>
+            <div class = "col-xs-1"></div>
+        </div>
+        <hr class = "divider" />
+        <form id = "ajax-contact" method="post" action="send_form_email.php">
+            
+                
+                
+                <fieldset>
+                	<div class = "row">
+                    	<div  align = "right" class = "col-sm-5 hidden-xs">
+                  			<label class = "contact-label">Name<span class = "required"> *</span></label>
+                        </div>
+                        <div class = "col-xs-11 visible-xs col-xs-offset-1">
+                  			<label class = "contact-label">Name<span class = "required"> *</span></label>
+                        </div>
+                        
+               			<div class = "col-sm-5 hidden-xs">
+                    		<input class="contact-input"  id = "name" name="name" size = "30" autocomplete="off" required/>
+                        </div>
+                         <div  align = "center" class = "col-xs-12 visible-xs">
+                    		<input class="contact-input" id = "name" name="name" size = "30" autocomplete="off" required/>
+                        </div>
+                    </div>
+                    <div class = "row">
+                    	<div  align = "right" class = "col-sm-5 hidden-xs">
+                  			<label class = "contact-label">Email<span class = "required"> *</span></label>
+                        </div>
+                        <div class = "col-xs-11 visible-xs col-xs-offset-1">
+                  			<label  class = "contact-label">Email<span class = "required"> *</span></label>
+                        </div>
+                        
+                        <div class = "col-sm-5 hidden-xs">
+                  			<input  class="contact-input" id =  "email"name="email" type="email" size = "30" autocomplete="off" required/>
+                        </div>
+                        <div  align = "center" class = "col-xs-12 visible-xs">
+                  			<input class="contact-input" id =  "email"name="email" type="email" size = "30" autocomplete="off" required/>
+                        </div>
+                        
+                    </div>
+					<div class = "row">
+                    	<div  align = "right" class = "col-sm-5 hidden-xs">
+                  			<label class = "contact-label">Message<span class = "required"> *</span></label>
+                        </div>
+                        <div class = "col-xs-11 visible-xs col-xs-offset-1">
+                  			<label  class = "contact-label">Message<span class = "required"> *</span></label>
+                        </div>
+                        <div class = "col-sm-5 hidden-xs">
+                    		<textarea class="contact-input" id = "message"name="message" rows="6" cols="32" autocomplete="off" required></textarea>
+                        </div>
+                        <div  align = "center" class = "col-xs-12 visible-xs">
+                    		<textarea class="contact-input" id = "message"name="message" rows="6" cols="32" autocomplete="off" required></textarea>
+                        </div>
+                    </div>
+					<div class = "row">
+                    	<div  align = "right" class = "col-sm-5 hidden-xs">
+                  			<label  class = "contact-label">What is 5+2?<span class = "required"> *</span></label>
+                        </div>
+                        <div class = "col-xs-11 visible-xs col-xs-offset-1">
+                  			<label  class = "contact-label">What is 5+2?<span class = "required"> *</span></label>
+                        </div>
+                        <div class = "col-sm-5 hidden-xs">
+                    		<input class="contact-input" id = "human" name="human" size = "30" autocomplete="off" required/>
+                        </div>
+                        <div  align = "center" class = "col-xs-12 visible-xs">
+                    		<input class="contact-input" id = "human" name="human" size = "30" autocomplete="off" required/>
+                        </div>
+                        
+                    </div>
+                    <div class = "row">
+                    	<div class = "col-xs-12" align="center">
+                    		<label class="placeholder">&nbsp;</label>
+                    	</div>
+                    </div>
+                    <div class = "row">
+                    	<div class = "col-xs-12" align="center">
+                    		<div id="form-messages"></div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                    	<div  align = "center" class = "col-xs-12">
+                    		<input class="contact-input" id="submit" name="submit" type="submit" value="Submit" width="48"/>
+                        </div>
+                    </div>
+                    <br />
+                </fieldset>
+            </form> 
+        
+        
+        
+        
+        
+ 	</div>
+     <br /><br /><br /><br />
+	<footer class="footer">
+      <div class="container">
+        <p class="footer-font">Copyright &copy; 2016 All rights reserved</p>
+      </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+﻿/*
+	yellow: ffca3c
+	blue: 01bbd4
+*/
+
+/* submit + title */
+.formoid-solid-purple div.submit,
+.formoid-solid-purple div.title{
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.formoid-solid-purple div.submit{
+  vertical-align: middle;
+  text-align: right;
+
+}
+
+
+/* Button & submit*/
+.formoid-solid-purple input[type=button],
+.formoid-solid-purple input[type=submit]{
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 1px;
+  color: #fff;
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #fff;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: normal;
+
+  border: 2px solid #bdc3c7;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  border-radius:3px;
+  box-shadow: inset 0 -0.3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.formoid-solid-purple input[type=button][disabled] {
+  cursor: default;
+  opacity: 0.65;
+}
+
+.formoid-solid-purple input[type=submit]{
+  text-align: center;
+  opacity: 1;
+  color: #ffffff;
+  border: none;
+  right: 20px;
+  margin-right: 27px;
+  padding: 11px 41px;
+}
+
+.formoid-solid-purple input[type=submit]:hover{
+  text-decoration: none;
+}
+.formoid-solid-purple input[type=submit]:active{
+  box-shadow: inset 0 -0.15em 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*IMPORTANT*/
+
+.formoid-solid-purple input[type=text],
+.formoid-solid-purple input[type=password],
+.formoid-solid-purple input[type=email],
+.formoid-solid-purple input[type=url],
+.formoid-solid-purple input[type=date],
+.formoid-solid-purple input[type=number],
+.formoid-solid-purple input[type=tel],
+
+.formoid-solid-purple .element-file .file_text
+{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #bdc3c7;
+  -webkit-transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.5s ease-in-out;
+  border-radius:3px;
+  font-size:14px;
+  padding: 6px 10px 7px 2.3em;
+  outline:none;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: normal;
+  
+}
+.comments_textbox
+{
+    border-style: solid;
+  border-width: 2px;
+  border-color: #bdc3c7;
+  -webkit-transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.5s ease-in-out;
+  border-radius:3px;
+  outline:none;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: normal;
+
+}
+.formoid-solid-purple .element-address input[type=text],
+.formoid-solid-purple .element-name input[type=text],
+.formoid-solid-purple .element-file .file_text,
+.formoid-solid-purple textarea{
+  width: 100%;
+  *width: 94%;
+}
+.formoid-solid-purple textarea{
+  height: auto;
+}
+.formoid-solid-purple  select{
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+
+/* type number */
+.formoid-solid-purple input[type=number]::-webkit-inner-spin-button, 
+.formoid-solid-purple input[type=number]::-webkit-outer-spin-button{ 
+  -webkit-appearance: none;
+}
+
+
+/*submit*/
+
+.formoid-solid-purple input[type=submit]{
+  background-color: #01bbd4;
+}
+
+.formoid-solid-purple input[type=submit]:hover{
+  background-color: #ffca3c;
+}
+
+
+
+
+/*input color*/
+
+.formoid-solid-purple input[type=text]:focus,
+.formoid-solid-purple input[type=tel]:focus,
+.formoid-solid-purple input[type=password]:focus,
+.formoid-solid-purple input[type=email]:focus,
+.formoid-solid-purple input[type=url]:focus,
+.formoid-solid-purple input[type=date]:focus,
+.formoid-solid-purple input[type=number]:focus,
+.formoid-solid-purple input[type=file]:focus,
+.formoid-solid-purple textarea:focus,
+.formoid-solid-purple select:focus{
+  border-color: #01bbd4;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+    padding-bottom:10px;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #ffca3c;
+}
+
+.panel-default >.panel-heading {
+    background-color: transparent;
+    border-bottom:none;
+}
+.data-toggle:focus{outline: none !important;}
+
+a:hover,
+a:active,
+a:link,
+a:visited
+{
+    text-decoration:none;
+}
+
+
+.formoid-solid-purple{
+  margin:0 auto;
+}
+
+.appt-label
+{
+	font-size:16px;
+	color:#01bbd4;
+	font-weight:bold;
+}
+.check-spacer
+{
+	padding-left:15px;
+	color:black;
+}
