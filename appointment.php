@@ -13,13 +13,19 @@
 		$phone = trim($_POST["phone"]);
 		$pets = trim($_POST["pets"]);
         $message = trim($_POST["message"]);
-		$extra = trim($_POST["extra"]); 
+		$bedrooms =trim($_POST["bedrooms"]); 
+		$bathrooms = trim($_POST["bathrooms"]); 
+		$size = trim($_POST["size"]); 
+		$options= trim($_POST["options"]); 
 		
-		$bedrooms = $_GET["bedrooms"]; 
+		if (isset($_POST['extra'])) {
+    		$extras = implode(", ", $_POST['extra']);
+		} else {
+    		$extras = "no extras wanter";
+		}  
 		
-
         // Check that data was sent to the mailer.
-        if ( empty($first_name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($first_name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Oops! There was a problem with your submission. Please complete the form and try again.";
@@ -40,17 +46,21 @@
 		$email_content .= ", $zip_code\n";
         $email_content .= "Email: $email\n\n";
 		$email_content .= "Phone: $phone\n\n";
-		$email_content .= "House information: $query_params\n\n";
+		$email_content .= "Number of bedrooms: $bedrooms\n";
+		$email_content .= "Number of bathrooms: $bathrooms\n";
+		$email_content .= "House size: $size\n";
+		$email_content .= "Cleaning frequency: $options\n\n";
 		$email_content .= "Number of Pets: $pets\n\n";
-		$email_content .= "Extras Wanted: $extra\n\n";
+		$email_content .= "Extras Wanted: $extras\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
         $email_headers = "From: $name <$email>";
 
 		mail($recipient, $subject, $email_content, $email_headers);
-        http_response_code(200);
-        echo "Thank You! Your message has been sent.";
+        
+		header("Location: http:///hcserviclean.com/"); /* Redirect browser */
+		exit();
 
     }
 

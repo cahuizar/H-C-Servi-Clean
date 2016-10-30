@@ -8,61 +8,70 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/serviclean.js"></script>
-    
+
     <link rel="stylesheet" href="css/rangeSlider.css">
 	<link href = "css/seviclean_stylesheet.css" type = "text/css" rel = "stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
     <!--Mobile menu-->
- <nav id="affix-nav" class="navbar navbar-inverse navbar-fixed-top visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html">
-      	<img src='images/logo_nav_mobile.png' alt="Logo" width="50" height="50" />
-      </a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_us.html">About Us</a></li>
-          <li class="active"><a href="#">FAQ</a></li>
-          <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>    
-    
+    <!--Mobile menu-->
+	<nav class="navbar navbar-findcond navbar-fixed-top ">
+    <div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+            <a class="navbar-brand" href="index.html" style="padding-top: 0;">
+      			<img src='images/logo_nav_mobile.png' alt="Logo" width="50" height="50" />
+      		</a>
+			<a class="navbar-brand hidden-xs hidden-sm" href="index.html">H C <span class="serviclean">ServiClean</span></a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="index.html">Home</a></li>
+          		<li><a href="about_us.html">About Us</a></li>
+          		<li><a href="faq.html">FAQ</a></li>
+          		<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
     <!--End mobile menu-->
-    <div class = "container-fluid">
-    <div class = "visible-xs padding_top"></div>
-        <div class="row visible-xs">
-        	<div class = "col-xs-12" align="center">
-        		<h1>Frequently Asked Questions</h1>
-            </div>
+    <div class = "container">
+    <div class = "padding_top"></div>
+        <div class="row">
+        	<div class="col-md-2"></div>
+        	<div class = "col-xs-12 col-md-8" align="center">
+        		<h2 style="font-size:40px">QUESTIONS</h2>
+            </div><div class="col-md-2"></div>
         </div>
-        <div class="row visible-xs">
-        	<div class = "col-xs-1"></div>
-            <div class = "col-xs-10">
-            	<p>Below are some general asked questions, if you have any other specific question that was not found below, do not hesitate
-                   on emailing us at <strong style="color:#01bbd4">contact<span style="color:#ffca3c">@</span>hcserviclean.com</strong>, we will be sure to answer it as soon as we can. 
+        <div class="row">
+        	<div class = "col-xs-1 col-md-3"></div>
+            <div class = "col-xs-10 col-md-6">
+            	<p class = "appointment-description">
+                   Below are some general asked questions, if you have any other specific question that was not found below, do not hesitate
+                   on emailing us at <strong style="color:#01bbd4">contact<span style="color:#ffca3c">@</span>hcserviclean.com</strong>, we
+                   will be sure to answer it as soon as we can.
                 </p>
             </div>
-            <div class = "col-xs-1"></div>
+            <div class = "col-xs-1 col-md-3"></div>
         </div>
-        <br />  
+        <br />
 
 
     <div class="panel-group" id="accordion">
-        <div class="faqHeader"><h2>GENERAL</h2></div>
+  		<div class ="row">
+        <div class="faqHeader col-md-3"><h2>GENERAL</h2></div>
+        </div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -71,7 +80,7 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse">
                 <div class="panel-body">
-                    HC ServiClean provides products to give your home a great clean such as: mop, vacuum and bucket. For personal preference, please note that we are willing to use any products you may provide us.
+                    H C ServiClean provides products to give your home a great clean such as: mop, vacuum and bucket. For personal preference, please note that we are willing to use any products you may provide us.
                 </div>
             </div>
         </div>
@@ -95,10 +104,10 @@
             </div>
             <div id="collapseEleven" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Unlike others, HC ServiClean has a service quote, not a time quote. Which means that the cleaners will stay until they get all that's needed done.
+                    Unlike others, H C ServiClean has a service quote, not a time quote. Which means that the cleaners will stay until they get all that's needed done.
                 </div>
             </div>
-            
+
         </div>
          <div class="panel panel-default">
             <div class="panel-heading">
@@ -111,7 +120,7 @@
                     You do not have to be home for your clean as long as your cleaner has proper directions for entering and exiting your home.
                 </div>
             </div>
-            
+
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -121,12 +130,12 @@
             </div>
             <div id="collapse13" class="panel-collapse collapse">
                 <div class="panel-body">
-                    That's okay! Just leave us detailed entry instructions so we know how to gain access to your home. Your home will be locked when the cleaner leaves. 
+                    That's okay! Just leave us detailed entry instructions so we know how to gain access to your home. Your home will be locked when the cleaner leaves.
                 </div>
             </div>
-            
+
         </div>
-        
+
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -135,13 +144,14 @@
             </div>
             <div id="collapse14" class="panel-collapse collapse">
                 <div class="panel-body">
-                    At the moment we accept cash and checks. 
+                    At the moment we accept cash and checks.
                 </div>
             </div>
-            
-        </div>
 
-        <div class="faqHeader"><h2>TRUST & SAFETY</h2></div>
+        </div>
+		<div class ="row">
+        <div class="faqHeader col-md-3"><h2>TRUST & SAFETY</h2></div>
+        </div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -162,14 +172,14 @@
             </div>
             <div id="collapseThree" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Absolutely. The cleaners are highly trained, background and reference checked. Our cleaners are full-time employees of our company, not contractors. 
+                    Absolutely. The cleaners are highly trained, background and reference checked. Our cleaners are full-time employees of our company, not contractors.
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Is HC ServiClean pet safe?</a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Is H C ServiClean pet safe?</a>
                 </h4>
             </div>
             <div id="collapseFive" class="panel-collapse collapse">
@@ -187,35 +197,114 @@
             </div>
             <div id="collapseSix" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Yes, we have serviced countless of happy customers. If you'd like to see our references, please read our Yelp reviews or send us and email! 
+                    Yes, we have serviced countless of happy customers. If you'd like to see our references, please read our Yelp reviews or send us and email!
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Does HC ServiClean use cleaning products that are safe for all surfaces? </a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Does H C ServiClean use cleaning products that are safe for all surfaces? </a>
                 </h4>
             </div>
             <div id="collapseEight" class="panel-collapse collapse">
                 <div class="panel-body">
-                    All of our cleaners and maids are trained to use products that are safe for all surfaces, including: stainless steel, tiles, glass, wood, etc.  
+                    All of our cleaners and maids are trained to use products that are safe for all surfaces, including: stainless steel, tiles, glass, wood, etc.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">What if something is damaged during the cleaning? </a>
+                </h4>
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Accidents can happen. You can rest assured your H C ServiClean team will excersice great care with your belongings to
+                    deter damage. If something does happen to get damaged or broken by H C ServiClean, we will make every attempt to repair
+                    or replace the item and if appropiacte, insurance claims will be filed.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#SecondCollapseTen">How do we gain access to your home? </a>
+                </h4>
+            </div>
+            <div id="SecondCollapseTen" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Many customers provide us a key or combination code access, some leave their key in a safe hiding place.
                 </div>
             </div>
         </div>
 
-        
+
     </div>
-    
-    
-    
+
+
+
  	</div>
      <br /><br /><br /><br />
-	<footer class="footer">
-      <div class="container">
-        <p class="footer-font">Copyright &copy; 2016 All rights reserved</p>
-      </div>
-    </footer>
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>H C <span>ServiClean</span></h3>
+
+				<p class="footer-links">
+					<a class="home_link" href="index.html">Home</a>
+					·
+					<a  class="about_us_link" href="about_us.html">About Us</a>
+					·
+					<a class = "faq_link" href="faq.html">FAQ</a>
+					·
+					<a class="contact_us_link" href="contact_us.html">Contact Us</a>
+				</p>
+
+				<p class="footer-company-name">H C ServiClean &copy; 2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker glyphicon glyphicon-home"></i>
+					<p><span class="address_span">P.O Box 1091</span>46060 Noblesville, Indiana</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone glyphicon glyphicon-earphone "></i>
+					<p>+1 (847) 293 4525</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope glyphicon glyphicon-envelope  "></i>
+					<p class="email_span">contact<span style="color:#ffca3c">@</span>hcserviclean.com</p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span class = "abut_the_company_span">About the company</span>
+					
+
+						Providing house and commercial cleaning for more than 5 years. We have a history of excellence and dedication
+                        to our clients, providing professional and high-quality cleaning. 
+				</p>
+
+				<div class="footer-icons">
+
+					<a target = "_blank" href="https://www.yelp.com/biz/hc-serviclean-noblesville-2"><i class="fa fa-yelp"></i></a>
+					<a target = "_blank" href="https://www.facebook.com/hcserviclean/"><i class="fa fa-facebook-square"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 
 </body>
 </html>

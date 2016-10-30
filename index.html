@@ -11,85 +11,97 @@
     <script type="text/javascript" src="js/serviclean.js"></script>
     <link rel="stylesheet" href="css/rangeSlider.css">
 	<link href = "css/seviclean_stylesheet.css" type = "text/css" rel = "stylesheet" />
-    
+
     <link rel="apple-touch-icon" href="images/touch.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="images/ipad.png"/>
     <link rel="apple-touch-icon" sizes="114x114" href="images/iphone_retina.png"/>
     <link rel="apple-touch-icon" sizes="144x144" href="images/ipad_retina.png"/>
-</head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
+</head>
 <body>
 
+	<nav class="navbar navbar-findcond navbar-fixed-top ">
+    <div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+            <a class="navbar-brand" href="index.html" style="padding-top: 0;">
+      			<img src='images/logo_nav_mobile.png' alt="Logo" width="50" height="50" />
+      		</a>
+			<a class="navbar-brand hidden-xs hidden-sm" href="index.html">H C <span class="serviclean">ServiClean</span></a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="index.html">Home</a></li>
+          		<li><a href="about_us.html">About Us</a></li>
+          		<li><a href="faq.html">FAQ</a></li>
+          		<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
     <!--Mobile menu-->
- <nav id="affix-nav" class="navbar navbar-inverse navbar-fixed-top visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">
-      	<img src='images/logo_nav_mobile.png' alt="Logo" width="50" height="50" />
-      </a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="about_us.html">About Us</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>    
-    
+
+
     <!--End mobile menu-->
     <div class = "container-fluid bg">
-  		<div class = "visible-xs padding_top"></div>
-            <form id = "parameters"method="GET" action="appointment.html">
+  		<div class = "padding_top"></div>
+            <form id = "parameters"method="GET" action="appointment-test.php">
                 <fieldset>
-                   
-                    <div class = "row visible-xs">
-                        <div class = "col-xs-11 col-xs-offset-1" style="text-align:left">
+                  <div class = "row hidden-sm hidden-xs">
+                      <div class = "col-xs-12" style="text-align:center">
+                          <label class = "index-heading">Schedule a Free Consultation </label>
+                      </div>
+                  </div>
+                    <div class = "row">
+                    	<div class = "col-md-2 col-xs-1"></div>
+                        <div class = "col-xs-11 col-md-10" style="text-align:left">
                             <label class = "index-contact">Number of Bedroom(s): </label>
                         </div>
-                        <div class = "col-xs-8 col-xs-offset-2">
+                        <div class = "col-xs-2 col-md-3"></div>
+                        <div class = "col-xs-8 col-md-6">
                             <input type="range" name="bedrooms" class = "bedroom_range" min="1" max="7" data-rangeSlider>
                             <output style="text-align:center"></output>
-                        </div>  
-                        <div class = "col-xs-2"></div>
-                    </div>
-                    <br />
-                    <div class = "row visible-xs">
-                        <div class = "col-xs-11 col-xs-offset-1" style="text-align:left">
-                            <label class = "index-contact">Number of Bathroom(s): </label>
                         </div>
-                        <div class = "col-xs-8 col-xs-offset-2">
-                            <input type="range" name:"bathrooms" class = "bathroom_range" min="1" max="7" data-rangeSlider>
-                            <output style="text-align:center"></output>
-                        </div>  
-                        <div class = "col-xs-2"></div>
-                    </div>
-                    <br />
-                    
-                    <div class = "row visible-xs">
-                        <div class = "col-xs-11 col-xs-offset-1" style="text-align:left">
-                            <label class = "index-contact">Home Size:</label>
-                        </div>
-                        <div class = "col-xs-8 col-xs-offset-2">
-                            <input type="range" name = "size" class = "sq_range" min="400" max="10000"  data-rangeSlider>
-                            <output style="text-align:center"></output>
-                        </div>  
-                        <div class = "col-xs-2"></div>
+                        <div class = "col-xs-2 col-md-3"></div>
                     </div>
                     <br />
                     <div class = "row">
-                    	<div class = "col-sm-2"></div>
-                        <div class = "col-sm-8 col-xs-12"><label class = "index-contact">How often would you need us to clean?</label></div>
-                        <div class = "col-sm-2"></div>
+                        <div class = "col-md-2 col-xs-1"></div>
+                        <div class = "col-xs-11 col-md-10" style="text-align:left">
+                            <label class = "index-contact">Number of Bathroom(s): </label>
+                        </div>
+                        <div class = "col-xs-2 col-md-3"></div>
+                        <div class = "col-xs-8 col-md-6">
+                            <input type="range" name="bathrooms" class = "bathroom_range" min="1" max="7" data-rangeSlider>
+                            <output style="text-align:center"></output>
+                        </div>
+                        <div class = "col-xs-2 col-md-3"></div>
+                    </div>
+                    <br />
+
+                    <div class = "row">
+                        <div class = "col-md-2 col-xs-1"></div>
+                        <div class = "col-xs-11 col-md-10" style="text-align:left">
+                            <label class = "index-contact">Home Size:</label>
+                        </div>
+                        <div class = "col-xs-2 col-md-3"></div>
+                        <div class = "col-xs-8 col-md-6">
+                            <input type="range" name = "size" class = "sq_range" min="400" max="8000"  data-rangeSlider>
+                            <output style="text-align:center"></output>
+                        </div>
+                        <div class = "col-xs-2 col-md-3"></div>
+                    </div>
+                    <br />
+                    <div class = "row">
+                    	<div class = "col-md-2"></div>
+                        <div class = "col-md-10 col-xs-12"><label class = "index-contact">How often would you need us to clean?</label></div>
                     </div>
                     <div class = "row">
                     <div class = "col-sm-12" style="text-align:center">
@@ -109,135 +121,204 @@
 					</div>
                     </div>
                     </div>
-                    
+
                     <br />
                     <br />
-                    
+
                     <div class = "row">
                     	<div class = "col-xs-12" style="text-align:center">
-                        	<button type="submit" class="btn btn-default" style="color:white">Schedule an appointment</button>
+                        	<button type="submit" class="btn btn-default" style="color:white">Schedule consultation</button>
                             <br /><br /><br /><br />
-                            
+
                         </div>
                     </div>
-                 	
-                	
+
+
                 </fieldset>
-            </form> 
+            </form>
     </div>
     <div class = "container-fluid reviews-div">
-    
-    	<div class = "row visible-xs">
+
+    	<div class = "row ">
             <div class = "col-xs-12 yelp-padding" align="center">
-        		<p class = "reviews"><a class = "yelp-link" href="#"><img src="images/yelp-logo.png" alt="yelp-logo" >
+        		<p class = "reviews"><a target = "_blank"class = "yelp-link" href="https://www.yelp.com/biz/hc-serviclean-noblesville-2"><img src="images/yelp-logo.png" alt="yelp-logo" >
                                      <img src="images/empty-star.png" alt="star" >
                                      <img src="images/empty-star.png" alt="star" >
                                      <img src="images/empty-star.png" alt="star" >
                                      <img src="images/empty-star.png" alt="star" >
-                                     <img src="images/empty-star.png" alt="star" >    
+                                     <img src="images/empty-star.png" alt="star" >
                </a> </p>
             </div>
         </div>
     </div>
     <br />
-                    <br /><br />
+    <br />
+    <div class = "container-fluid">
+      <div class="row" align="center">
+        <div class = "col-xs-12" >
+        <blockquote >
+          <p class ="slogan-font"><span class = "slogan-quotes">" </span>The solution to <span class = "slogan-all-word">all</span> your cleaning needs. <span class = "slogan-quotes">"</span></p>
+        </blockquote>
+          </div>
+      </div>
+    </div>
                     <br />
-    <div class="container-fluid">
-        <div class="row visible-xs">
-        	<div class = "col-xs-12" align="left">
-        		<h2>WHAT'S INCLUDED?</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+        	  <div class = "col-xs-12 col-md-8" align="left">
+        		<h2 class ="index-header">WHAT'S INCLUDED?</h2>
+            <div class="col-md-2"></div>
             </div>
         </div>
-        <div class="row visible-xs">
-        	<div class="col-xs-1"></div>
-        	<div class = "col-xs-10">
-        		<p class = "li-description">HCServiClean is Indiana's highest rated cleaning service. Our friendly & professionally employed cleaners are background-checked, insured & bonded, and bring eco-friendly supplies! We'll have your home or apartment spotless in no time 100% Happiness Guaranteed! If you're unhappy with your cleaning for any reason, simply let us know and we'll re-clean for free!</p>
+        <div class="row">
+        	<div class="col-xs-1 col-md-3"></div>
+        	<div class = "col-xs-10 col-md-6">
+        		<p class = "li-description">H C ServiClean is Indiana's highest rated cleaning service. Our friendly & professional employees are background-checked,
+                                                        insured & bonded, and bring eco-friendly supplies! We'll have your home or apartment spotless in no time 100% Happiness Guaranteed!
+                                                        you're unhappy with your cleaning for any reason, simply let us know and we'll re-clean for free!</p>
             </div>
-            <div class="col-xs-1"></div>
+            <div class="col-xs-1 col-md-3"></div>
         </div>
         <br /><br /><br /><br />
-        
-    	<div class="row visible-xs">
+
+    	<div class="row visible-xs visible-sm">
         	<div class = "col-xs-12" align="center">
         	 <img src="images/bedroom.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
             </div>
         </div>
-        <div class="row visible-xs">
-        	<div class = "col-xs-12" align="center">
-        		<h2>BEDROOMS, AND LIVING ROOMS</h2>
+        <div class="row">
+        	<div class = "col-xs-12 visible-xs" align="center">
+        		<h2 class ="index-header">BEDROOMS & LIVING ROOMS</h2>
             </div>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class="col-xs-1"></div>
         	<div class = "col-xs-10">
         		<ul>
-                	<li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
-                    <li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
-                    <li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
+                	  <li class = "li-description" >Dusted picture frames, ceiling fans, lamp shades, and blinds</li>
+                    <li class = "li-description">Clean hardwood floors,vacuumed and damp mopped</li>
+                    <li class = "li-description">Doors and door frames spot cleaned</li>
+                    <li class = "li-description">Flat areas hand wiped</li>
                 </ul>
             </div>
             <div class="col-xs-1"></div>
         </div>
-        <br /><br /><br /><br />
+
+
+        <div class="row hidden-xs hidden-sm">
+          <div class = "col-md-4" >
+            <h2 class ="index-header">BEDROOMS & LIVING ROOMS</h2>
+          	 <img src="images/bedroom.jpg" class="img-circle" alt="Cinque Terre" width="390" height="316">
+           </div>
+           <div class = "col-md-8"style="padding-top:140px;">
+             <ul>
+                     <li class = "li-description">Dusted picture frames, ceiling fans, lamp shades, and blinds</li>
+                     <li class = "li-description">Clean hardwood floors,vacuumed and damp mopped</li>
+                     <li class = "li-description">Doors and door frames spot cleaned</li>
+                     <li class = "li-description">Flat areas hand wiped</li>
+                 </ul>
+             </div>
+
+          </div>
+
+          <br /><br /><br /><br />
+
         <!-- Bathroom -->
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class = "col-xs-12" align="center">
         	 <img src="images/kitchen.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
             </div>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class = "col-xs-12" align="center">
         		<h2>KITCHEN</h2>
             </div>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class="col-xs-1"></div>
         	<div class = "col-xs-10">
         		<ul>
-                	<li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
-                    <li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
-                    <li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
+                	<li class = "li-description">Cleaned counter tops and front of all appliances</li>
+                    <li class = "li-description">Floors vacuumed and damp mopped</li>
+                    <li class = "li-description">Microwave wiped out</li>
+                    <li class = "li-description">General dusting</li>
                 </ul>
             </div>
             <div class="col-xs-1"></div>
         </div>
+
+        <div class="row hidden-xs hidden-sm">
+          <div class = "col-md-3"></div>
+          <div class = "col-md-5" style="padding-top:140px;">
+        		<ul>
+              <li class = "li-description">Cleaned counter tops and front of all appliances</li>
+              <li class = "li-description">Floors vacuumed and damp mopped</li>
+              <li class = "li-description">Microwave wiped out</li>
+              <li class = "li-description">General dusting</li>
+             </ul>
+          </div>
+        	<div class = "col-md-4" align="right">
+            <h2 align="left">KITCHEN</h2>
+        	  <img src="images/kitchen.jpg" class="img-circle" alt="Cinque Terre" width="390" height="316">
+          </div>
+        </div>
         <br /><br /><br /><br />
+
+
         <!-- Bathroom -->
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class = "col-xs-12" align="center">
         	 <img src="images/bathroom.jpeg" class="img-circle" alt="Cinque Terre" width="304" height="236">
             </div>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class = "col-xs-12" align="center">
         		<h2>BATHROOMS</h2>
             </div>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class="col-xs-1"></div>
         	<div class = "col-xs-10">
         		<ul>
-                	<li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
-                    <li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
-                    <li class = "li-description">This is just a sample, figure out what you will say, ask mom to see what she wants</li>
+                	 <li class = "li-description">Cleaned tile walls, bathtubs, showers, toilets, vanity and sink</li>
+                    <li class = "li-description">Mopped floors</li>
+                    <li class = "li-description">General dusting</li>
+                    <li class = "li-description">Carpets vacuumed</li>
                 </ul>
             </div>
             <div class="col-xs-1"></div>
         </div>
-        
+
+        <div class="row hidden-xs hidden-sm">
+          <div class = "col-md-4" >
+            <h2 class ="index-header">BATHROOM</h2>
+          	 <img src="images/bathroom.jpeg" class="img-circle" alt="Cinque Terre" width="390" height="316">
+           </div>
+           <div class = "col-md-8"style="padding-top:140px;">
+             <ul>
+               <li class = "li-description">Cleaned tile walls, bathtubs, showers, toilets, vanity and sink</li>
+                <li class = "li-description">Mopped floors</li>
+                <li class = "li-description">General dusting</li>
+                <li class = "li-description">Carpets vacuumed</li>
+            </ul>
+          </div>
+        </div>
+
+
         <br /><br /><br /><br />
         <!-- Laundry -->
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class = "col-xs-12" align="center">
         	 <img src="images/laundry.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
             </div>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class = "col-xs-12" align="center">
         		<h2>EXTRAS [EXTRA FEE]</h2>
             </div>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
         	<div class="col-xs-1"></div>
         	<div class = "col-xs-11">
         		<ul>
@@ -251,14 +332,84 @@
             </div>
             <div class="col-xs-1"></div>
         </div>
-        
+
+    <div class="row hidden-xs hidden-sm">
+      <div class = "col-md-5"></div>
+      <div class = "col-md-3" style="padding-top:140px;">
+        <ul>
+          <li class = "li-description">Inside fridge</li>
+            <li class = "li-description">Inside oven</li>
+            <li class = "li-description">Interior windows</li>
+            <li class = "li-description">Wash & dry laundry</li>
+            <li class = "li-description">Inside cabinets</li>
+            <li class = "li-description">Baseboard deep clean</li>
+        </ul>
     </div>
+    <div class = "col-md-4" align="right">
+      <h2 align="left">EXTRAS [EXTRA FEE]</h2>
+      <img src="images/kitchen.jpg" class="img-circle" alt="Cinque Terre" width="390" height="316">
+    </div>
+  </div>
+</div>
      <br /><br /><br /><br />
-	<footer class="footer">
-      <div class="container">
-        <p class="footer-font">Copyright &copy; 2016 All rights reserved</p>
-      </div>
-    </footer>
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>H C <span>ServiClean</span></h3>
+
+				<p class="footer-links">
+					<a class="home_link" href="index.html">Home</a>
+					·
+					<a  class="about_us_link" href="about_us.html">About Us</a>
+					·
+					<a class = "faq_link" href="faq.html">FAQ</a>
+					·
+					<a class="contact_us_link" href="contact_us.html">Contact Us</a>
+				</p>
+
+				<p class="footer-company-name">H C ServiClean &copy; 2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker glyphicon glyphicon-home"></i>
+					<p><span class="address_span">P.O Box 1091</span>46060 Noblesville, Indiana</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone glyphicon glyphicon-earphone "></i>
+					<p>+1 (847) 293 4525</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope glyphicon glyphicon-envelope  "></i>
+					<p class="email_span">contact<span style="color:#ffca3c">@</span>hcserviclean.com</p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span class = "abut_the_company_span">About the company</span>
+					
+
+						Providing house and commercial cleaning for more than 5 years. We have a history of excellence and dedication
+                        to our clients, providing professional and high-quality cleaning. 
+				</p>
+
+				<div class="footer-icons">
+
+					<a target = "_blank" href="https://www.yelp.com/biz/hc-serviclean-noblesville-2"><i class="fa fa-yelp"></i></a>
+					<a target = "_blank" href="https://www.facebook.com/hcserviclean/"><i class="fa fa-facebook-square"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 	<script src="js/rangeSlider.js"></script>
     <script>
     (function () {
@@ -278,7 +429,7 @@
 			{
 				output.innerHTML = value + " Bedrooms";
 			}
-            
+
         }
 		// Example functionality to demonstrate a value feedback
         function bathroom(element) {
@@ -292,16 +443,16 @@
 			{
 				output.innerHTML = value + " Bathroom";
 			}
-            
+
         }
-		
+
 		// Example functionality to demonstrate a value feedback
         function sq(element) {
             var value = element.value,
                     output = element.parentNode.getElementsByTagName('output')[0];
-			
+
 			output.innerHTML = value + " square feet";
-			            
+
         }
 
 
@@ -310,7 +461,7 @@
                 valueOutput(e.target);
             }, false);
         });
-		
+
 		Array.prototype.slice.call(document.querySelectorAll('input[class="bathroom_range"]')).forEach(function (el) {
             el.addEventListener('input', function (e) {
                 bathroom(e.target);
